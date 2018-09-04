@@ -8,7 +8,7 @@ import {LocalStorageService} from "../local-storage/local-storage.service";
 @Injectable()
 export class AuthorityService {
     constructor(
-        private $localStorageService: LocalStorageService
+        private $localStorageService: LocalStorageService,
     ) {}
 
     getCurrentUser(): User {
