@@ -12,4 +12,4 @@ source ./build_func.sh
 cd ~/Documents/angular6/ws-user/build-scripts/
 source ./build_func.sh
 
-sudo nginx -s reload
+sudo nginx -s reload -pwd=8525abcd
