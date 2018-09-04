@@ -7,6 +7,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HelloComponent} from "./component/hello/hello.component";
 import {CommonModule} from "@angular/common";
 import {LocalStorageService} from "./service/local-storage/local-storage.service";
+import {AuthorityService} from "./service/authority/authority.service";
+import {AuthorityGuardService} from "./service/authority-guard/authority-guard.service";
 
 @NgModule({
     imports: [
@@ -21,7 +23,9 @@ import {LocalStorageService} from "./service/local-storage/local-storage.service
         HelloComponent
     ],
     providers: [
-        LocalStorageService
+        LocalStorageService,
+        AuthorityService,
+        AuthorityGuardService
     ]
 })
 
