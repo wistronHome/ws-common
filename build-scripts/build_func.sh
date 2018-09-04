@@ -4,7 +4,6 @@ cd ../
 
 # 安装依赖
 yarn
-npm version patch
 if [ $? == 0 ]
 then echo "version patch success!"
 else
