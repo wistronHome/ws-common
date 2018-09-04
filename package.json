@@ -1,6 +1,6 @@
 {
     "name": "ws-common",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "scripts": {
         "ng": "ng",
         "start": "ng serve --port 4200",
