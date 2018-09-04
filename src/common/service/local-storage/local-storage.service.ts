@@ -17,4 +17,8 @@ export class LocalStorageService {
     set(key: string, value: any): void {
         localStorage.setItem(`${this.prefix}${this.separator}${key}`, typeof value === 'string' ? value : JSON.stringify(value));
     }
+
+    remove(key: string) {
+        localStorage.removeItem(`${this.prefix}${this.separator}${key}`);
+    }
 }
