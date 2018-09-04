@@ -3,3 +3,6 @@
  */
 
 export * from './common/common.module';
+
+// service
+export {LocalStorageService} from './common/service/local-storage/local-storage.service';

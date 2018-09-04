@@ -6,6 +6,7 @@ import {NgModule} from "@angular/core";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HelloComponent} from "./component/hello/hello.component";
 import {CommonModule} from "@angular/common";
+import {LocalStorageService} from "./service/local-storage/local-storage.service";
 
 @NgModule({
     imports: [
@@ -18,6 +19,9 @@ import {CommonModule} from "@angular/common";
     ],
     exports: [
         HelloComponent
+    ],
+    providers: [
+        LocalStorageService
     ]
 })
 
