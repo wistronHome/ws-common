@@ -16,7 +16,7 @@ export class SystemConfigService {
     /**
      * 替换所有的系统配置缓存
      * 在设置语言环境时，设置ng-zorro的国际化
-     * @param config
+     * param config
      */
     setSystemConfig(config: any) {
         try {
@@ -32,7 +32,7 @@ export class SystemConfigService {
 
     /**
      * 获取所有系统配置缓存
-     * @returns {any}
+     * returns {any}
      */
     getSystemConfig(): any {
         try {
@@ -44,8 +44,8 @@ export class SystemConfigService {
 
     /**
      * 更新指定的系统配置缓存
-     * @param {string} key
-     * @param config
+     * param {string} key
+     * param config
      */
     setSystemConfigByKey(key: string, config: any) {
         const systemConfig = this.getSystemConfig() || {};
@@ -55,8 +55,8 @@ export class SystemConfigService {
 
     /**
      * 获取指定的系统配置缓存
-     * @param {string} key
-     * @returns {any}
+     * param {string} key
+     * returns {any}
      */
     getSystemConfigByKey(key: string) {
         return this.getSystemConfig()[key];
