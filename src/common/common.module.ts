@@ -12,18 +12,23 @@ import {AuthorityGuardService} from "./service/authority-guard/authority-guard.s
 import {CommonI18nService} from "./service/common-i18n/common-i18n.service";
 import {COMMON_INJECTOR} from "./common.consts";
 import {SystemConfigService} from "./service/system-config/system-config.service";
+import {DrawerMenuComponent} from "./component/drawer-menu/drawer-menu.component";
+import {NgZorroAntdModule} from "ng-zorro-antd";
 
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        NgZorroAntdModule
     ],
     declarations: [
-        HelloComponent
+        HelloComponent,
+        DrawerMenuComponent
     ],
     exports: [
-        HelloComponent
+        HelloComponent,
+        DrawerMenuComponent
     ],
     providers: [
         LocalStorageService,

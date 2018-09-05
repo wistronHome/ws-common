@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {WsCommonModule} from "../common/common.module";
+import {NgZorroAntdModule} from "ng-zorro-antd";
 
 @NgModule({
     declarations: [
@@ -10,7 +11,8 @@ import {WsCommonModule} from "../common/common.module";
     ],
     imports: [
         BrowserModule,
-        WsCommonModule
+        WsCommonModule,
+        NgZorroAntdModule
     ],
     providers: [],
     bootstrap: [AppComponent]

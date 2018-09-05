@@ -1,0 +1,13 @@
+<button (click)="show = true">弹出</button>
+
+<nz-drawer
+    [nzVisible]="show"
+    [nzTitle]="'工程菜单'"
+    [nzClosable]="false"
+    [nzMaskClosable]="true"
+    [nzWidth]="200"
+    [nzPlacement]="'left'">
+
+    <a >用户管理</a><br>
+    <a >概览</a>
+</nz-drawer>
