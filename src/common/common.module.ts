@@ -9,6 +9,9 @@ import {CommonModule} from "@angular/common";
 import {LocalStorageService} from "./service/local-storage/local-storage.service";
 import {AuthorityService} from "./service/authority/authority.service";
 import {AuthorityGuardService} from "./service/authority-guard/authority-guard.service";
+import {CommonI18nService} from "./service/common-i18n/common-i18n.service";
+import {COMMON_INJECTOR} from "./common.consts";
+import {SystemConfigService} from "./service/system-config/system-config.service";
 
 @NgModule({
     imports: [
@@ -25,7 +28,15 @@ import {AuthorityGuardService} from "./service/authority-guard/authority-guard.s
     providers: [
         LocalStorageService,
         AuthorityService,
-        AuthorityGuardService
+        AuthorityGuardService,
+        {
+            provide: CommonI18nService,
+            useFactory() {
+                const systemConfigService = COMMON_INJECTOR.get(SystemConfigService);
+                const language = systemConfigService.getSystemConfigByKey('language');
+                return new CommonI18nService(language);
+            }
+        }
     ]
 })
 
