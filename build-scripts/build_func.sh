@@ -3,7 +3,7 @@
 cd ../
 
 # 安装依赖
-yarn
+# yarn
 if [ $? == 0 ]
 then echo "version patch success!"
 else
