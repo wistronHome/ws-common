@@ -29,6 +29,7 @@ import {SystemConfigService} from "./service/system-config/system-config.service
         LocalStorageService,
         AuthorityService,
         AuthorityGuardService,
+        SystemConfigService,
         {
             provide: CommonI18nService,
             useFactory() {
