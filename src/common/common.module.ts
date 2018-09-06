@@ -16,6 +16,7 @@ import {DrawerMenuComponent} from "./component/drawer-menu/drawer-menu.component
 import {NgZorroAntdModule} from "ng-zorro-antd";
 import {PermissionDirective} from "./directive/permission.directive";
 import {PermissionService} from "./service/permission/permission.service";
+import {NavigationService} from "./service/navigation/navigation.service";
 
 @NgModule({
     imports: [
@@ -42,6 +43,7 @@ import {PermissionService} from "./service/permission/permission.service";
         AuthorityGuardService,
         SystemConfigService,
         PermissionService,
+        NavigationService,
         {
             provide: CommonI18nService,
             useFactory() {
