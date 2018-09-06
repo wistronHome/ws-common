@@ -4,5 +4,7 @@
 
 export const StorageKey  = {
     prefix: 'ws',
+    separator: '.',
     SystemConfig: 'systemConfig'
 };
+

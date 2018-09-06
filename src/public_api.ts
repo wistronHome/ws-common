@@ -18,4 +18,5 @@ export {User} from './common/model/user.model';
 
 // const
 export {WhitelistRoutes} from './common/const/whitelist-routes';
+export {SystemConfigKey} from './common/const/system-config-key';
 export {StorageKey} from './common/const/storage-key';

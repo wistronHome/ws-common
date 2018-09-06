@@ -3,12 +3,11 @@
  */
 import {Injectable} from "@angular/core";
 import {StorageKey} from "../../const/storage-key";
-import {StorageSeparator} from "../../common.consts";
 import {NzI18nService, zh_CN, en_US} from "ng-zorro-antd";
 
 @Injectable()
 export class SystemConfigService {
-    private systemKey: string = `${StorageKey.prefix}${StorageSeparator}${StorageKey.SystemConfig}`;
+    private systemKey: string = `${StorageKey.prefix}${StorageKey.separator}${StorageKey.SystemConfig}`;
     constructor(
         private $nzI18nService: NzI18nService
     ) {}

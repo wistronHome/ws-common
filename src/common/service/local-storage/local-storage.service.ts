@@ -2,12 +2,12 @@
  * Created by guanyj on  2018/9/4
  */
 import {Injectable} from "@angular/core";
-import {StorageSeparator} from '../../common.consts';
+import {StorageKey} from "../../const/storage-key";
 
 @Injectable()
 export class LocalStorageService {
-    private prefix: string = 'ws';
-    private separator: string = StorageSeparator;
+    private prefix: string = StorageKey.prefix;
+    private separator: string = StorageKey.separator;
     constructor() {}
 
     get(key: string): any {

@@ -6,7 +6,7 @@ import {Injectable} from "@angular/core";
 import {SystemConfigService} from "../system-config/system-config.service";
 import * as lodash from 'lodash';
 import {StorageKey} from "../../const/storage-key";
-import {PermissionsKey, StorageSeparator} from "../../common.consts";
+import {SystemConfigKey} from "../../const/system-config-key";
 
 @Injectable()
 export class PermissionService {
@@ -19,7 +19,7 @@ export class PermissionService {
         private $systemConfigService: SystemConfigService
     ) {
         const permissions = this.$systemConfigService.getSystemConfigByKey(
-            `${StorageKey.prefix}${StorageSeparator}${PermissionsKey}`
+            `${StorageKey.prefix}${StorageKey.separator}${SystemConfigKey.permissions}`
         );
         this.permissionCodes = lodash.isEmpty(permissions) ? [] : permissions;
     }
