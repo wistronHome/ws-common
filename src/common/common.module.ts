@@ -14,6 +14,8 @@ import {COMMON_INJECTOR} from "./common.consts";
 import {SystemConfigService} from "./service/system-config/system-config.service";
 import {DrawerMenuComponent} from "./component/drawer-menu/drawer-menu.component";
 import {NgZorroAntdModule} from "ng-zorro-antd";
+import {PermissionDirective} from "./directive/permission.directive";
+import {PermissionService} from "./service/permission/permission.service";
 
 @NgModule({
     imports: [
@@ -24,17 +26,22 @@ import {NgZorroAntdModule} from "ng-zorro-antd";
     ],
     declarations: [
         HelloComponent,
-        DrawerMenuComponent
+        DrawerMenuComponent,
+
+        PermissionDirective
     ],
     exports: [
         HelloComponent,
-        DrawerMenuComponent
+        DrawerMenuComponent,
+
+        PermissionDirective
     ],
     providers: [
         LocalStorageService,
         AuthorityService,
         AuthorityGuardService,
         SystemConfigService,
+        PermissionService,
         {
             provide: CommonI18nService,
             useFactory() {

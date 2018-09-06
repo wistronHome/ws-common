@@ -21,6 +21,7 @@
         "core-js",
         "ng-zorro-antd",
         "rxjs",
+        "lodash",
         "zone.js"
     ]
 }

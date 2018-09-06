@@ -5,7 +5,10 @@
 import {Injector} from "@angular/core";
 
 /** 缓存key字段分割符 */
-export const StorageSeparator = '.';
+export const StorageSeparator: string = '.';
+
+/** 权限缓存key字段 */
+export const PermissionsKey: string = 'permissions';
 
 export let COMMON_INJECTOR: Injector;
 
