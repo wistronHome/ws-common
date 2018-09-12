@@ -96,6 +96,7 @@
                         "karmaConfig": "src/karma.conf.js",
                         "styles": [
                             "src/styles.scss",
+                            "src/theme.scss",
                             "./node_modules/ng-zorro-antd/src/ng-zorro-antd.min.css"
                         ],
                         "scripts": [],

@@ -1,4 +1,4 @@
-#ws-common
+# ws-common
 
 ## 概述
 
@@ -28,14 +28,15 @@ ws-common工程使用【ng-packagr】(https://github.com/dherges/ng-packagr)完�
         |- i18n                 // 国际化资源
         |- img                  // 图片资源
     |- app                      //
-|- ng-packagr.json              //
-|- README.MD                    //
+|- ng-packagr.json              // ng-packagr.json 打包配置文件
+|- README.MD                    // 说明文档
+|- ......
 ```
 
 ## 环境
-node v10.1.0
-yarn v1.9.4
-npm v5.6.0
+    node v10.1.0
+    yarn v1.9.4
+    npm v5.6.0
 
 ## 通用问题解决方案
 
