@@ -6,7 +6,7 @@ ws-common是基于angular6框架设计的前端公共工程、根据以往网管
 
 ## 原理
 
-ws-common工程使用【ng-packagr】(https://github.com/dherges/ng-packagr)完成打包构建，
+ws-common工程使用【ng-packagr】( https://github.com/dherges/ng-packagr )完成打包构建，
 使用ng-packagr构建出来的包和其他第三方的package没有任何区别；
 
 ## 开发目录
