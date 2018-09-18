@@ -17,6 +17,7 @@ import {NgZorroAntdModule} from "ng-zorro-antd";
 import {PermissionDirective} from "./directive/permission.directive";
 import {PermissionService} from "./service/permission/permission.service";
 import {NavigationService} from "./service/navigation/navigation.service";
+import {SystemConfigKey} from "./const/system-config-key";
 
 @NgModule({
     imports: [
@@ -48,7 +49,7 @@ import {NavigationService} from "./service/navigation/navigation.service";
             provide: CommonI18nService,
             useFactory() {
                 const systemConfigService = COMMON_INJECTOR.get(SystemConfigService);
-                const language = systemConfigService.getSystemConfigByKey('language');
+                const language = systemConfigService.getSystemConfigByKey(SystemConfigKey.language);
                 return new CommonI18nService(language);
             }
         }
